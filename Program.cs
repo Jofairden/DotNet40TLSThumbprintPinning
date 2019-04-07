@@ -21,7 +21,7 @@ namespace DotNet40TLSThumbprintPinning
 		{
 			// Add a sample download to perform
 			_downloadManager.AddRequest(new HttpDownloadRequest("ExampleDownload.zip",
-				() => (HttpWebRequest) WebRequest.Create("https://github.com/jofairden/DotNet40TLSThumbprintPinning/releases/download/v1.0/ExampleDownload.zip"),
+				() => (HttpWebRequest) WebRequest.Create("https://github.com/Jofairden/DotNet40TLSThumbprintPinning/releases/download/1.0/ExampleDownload.zip"),
 				() => { Console.WriteLine("I finished downloading ExampleDownload.zip!"); }));
 
 			_downloadManager.DownloadFilesFromQueue();
