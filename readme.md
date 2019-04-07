@@ -6,9 +6,9 @@ Showcases how to perform forced TLS with a proper server validation callback
 that performs certificate pinning to ensure certificate validity
 and safeguards against MITM attacks. Note, the program does not perform any
 form of pure HPKP. (Which is deprecated anyways, see the notes about the new
-Expect-CT Header).In the example we showcase comparing the SHA-1 Thumbprint of 
-the certificateto verify validity, which is possibly the easiest form of pinning 
-but not the best. Other forms of pinning can be implemented such as certificate pinning 
+Expect-CT Header). In the example we showcase comparing the SHA-1 Thumbprint of 
+the certificate to verify validity, which is possibly the easiest form of pinning 
+but not necessarily the best. Other forms of pinning can be implemented such as certificate pinning 
 or public key pinning, each with their pros and cons.
 
 **This repository is meant to serve as an example on how you can enable TLS 
