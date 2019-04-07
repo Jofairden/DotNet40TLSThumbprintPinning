@@ -49,7 +49,6 @@ namespace DotNet40TLSThumbprintPinning
 
 			Request = _requestCallback();
 			Request.ProtocolVersion = ProtocolVersion;
-			Request.ProtocolVersion = HttpVersion.Version11;
 			Request.UserAgent = "DotNet40TLSThumbprintPinning/1.0 (Windows; Win32)";
 
 			// We may not want to set TCP here, there is no long polling and server /should/ respond
